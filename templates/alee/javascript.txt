@@ -1,0 +1,23 @@
+<div class="widget-content">
+<!-- Begin Show Hide Floating - http://www.aleezone.co.nr -->
+<style type="text/css"> 
+#hitsukeFX{ position:fixed; top:50px; z-index:+1000; } * html #hitsukeFX{position:relative;} .hitsukeFXtab{ height:200px; width:35px; float:left; cursor:pointer; background:url('chatbox.png') no-repeat; } 
+.hitsukeFXcontent{ float:left; border:2px solid #ffffff; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px; background:#F90; padding:10px; } 
+</style> 
+
+<script type="text/javascript"> 
+function showHidehitsukeFX(){ var hitsukeFX = document.getElementById("hitsukeFX"); var w = hitsukeFX.offsetWidth; hitsukeFX.opened ? movehitsukeFX(0, 40-w) : movehitsukeFX(40-w, 0); hitsukeFX.opened = !hitsukeFX.opened; } 
+function movehitsukeFX(x0, xf){ var hitsukeFX = document.getElementById("hitsukeFX"); var dx = Math.abs(x0-xf) > 10 ? 5 : 1; var dir = xf>x0 ? 1 : -1; var x = x0 + dx * dir; hitsukeFX.style.right = x.toString() + "px"; if(x0!=xf){setTimeout("movehitsukeFX("+x+", "+xf+")", 10);} } 
+</script> 
+<div style="right: -1px;" id="hitsukeFX"> <div class="hitsukeFXtab" onClick="showHidehitsukeFX()"> </div> <div class="hitsukeFXcontent">  <!-- Kode Chatboxmu Disini -->  
+<div><object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="445" height="295">
+				<param name="movie" value="<?php echo"$f[folder]"?>/chatbox/chatbox.swf">
+				<param name="quality" value="High">
+				<param name="wmode" value="transparent">
+				<param name="salign" value="L">
+				<embed src="<?php echo"$f[folder]"?>/chatbox/chatbox.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="445" height="295" quality="High" wmode="transparent" salign="L"></object>
+</div>
+
+<div style="text-align: right;"> <a href="javascript:showHidehitsukeFX()"></a> </div> </div> </div> 
+<script type="text/javascript"> var hitsukeFX = document.getElementById("hitsukeFX"); hitsukeFX.style.right = (40-hitsukeFX.offsetWidth).toString() + "px"; </script>
+</div>

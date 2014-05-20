@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS `chatbox` (
+  `ID` int(5) NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `comments` text NOT NULL,
+  `ip_pengunjung` text NOT NULL,
+  `time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
+
+--
+-- Dumping data for table `chatbox`
+--
+
+INSERT INTO `chatbox` (`ID`, `name`, `email`, `comments`, `ip_pengunjung`, `time`) VALUES
+(46, 'Neeta', 'neeta@aleezone.co.nr', 'Neeta ngetest ya bang...!!!', '127.0.0.1', '2010-09-06 18:38:54'),
+(34, 'alee', 'alee@alee.com', 'ngetest IP', '127.0.0.1', '2010-09-06 10:29:24'),
+(35, 'Pak Asep', 'asep@yahoo.com', 'Hallo Apa kabar dunia....', '127.0.0.1', '2010-09-06 10:42:42'),
+(36, 'testing', 'testing@testing.com', 'testing', '127.0.0.1', '2010-09-06 10:49:43'),
+(37, 'test', 'testing@testing.com', 'testing....', '127.0.0.1', '2010-09-06 10:52:23'),
+(45, 'ALeeZone', 'info@aleezone.co.nr', 'Aleezone lagi ngetest chatbox...!', '127.0.0.1', '2010-09-06 18:37:26'),
+(39, 'as', 'asd@fdadf.com', 'asdasd', '127.0.0.1', '2010-09-06 14:25:31');
